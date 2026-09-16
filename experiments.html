@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Experiments — Anmol | UI/UX Designer</title>
+
+    <meta
+        name="description"
+        content="UI/UX experiments and visual explorations by Anmolpreet Kaur."
+    >
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+
+
+    <style>
+
+        /* ========================================
+           EXPERIMENTS PAGE
+        ======================================== */
+
+        .experiments-page {
+
+            min-height: 100vh;
+
+            padding: 150px 0 100px;
+        }
+
+
+        /* ========================================
+           HEADER
+        ======================================== */
+
+        .experiments-header {
+
+            max-width: 800px;
+
+            margin: 0 auto;
+
+            text-align: center;
+        }
+
+        .experiments-header h1 {
+
+            font-family: "Manrope", sans-serif;
+
+            font-size: clamp(42px, 6vw, 72px);
+
+            line-height: 1.05;
+
+            letter-spacing: -2px;
+
+            margin: 0;
+        }
+
+        .experiments-header h1 span {
+
+            background: linear-gradient(
+                120deg,
+                #7c3aed,
+                #2563eb,
+                #00d9ff
+            );
+
+            -webkit-background-clip: text;
+
+            background-clip: text;
+
+            -webkit-text-fill-color: transparent;
+        }
+
+        .experiments-header p {
+
+            max-width: 600px;
+
+            margin: 24px auto 0;
+
+            color: rgba(255, 255, 255, 0.58);
+
+            font-size: 17px;
+
+            line-height: 1.7;
+        }
+
+
+        /* ========================================
+           BACK TO HOME
+        ======================================== */
+
+        .back-home {
+
+            display: inline-flex;
+
+            align-items: center;
+
+            gap: 8px;
+
+            position: fixed;
+
+            top: 105px;
+
+            left: max(
+                30px,
+                calc((100% - 1180px) / 2)
+            );
+
+            color: rgba(255, 255, 255, 0.65);
+
+            text-decoration: none;
+
+            font-size: 14px;
+
+            transition: all 0.3s ease;
+
+            z-index: 10;
+        }
+
+        .back-home:hover {
+
+            color: #ffffff;
+
+            transform: translateX(-3px);
+        }
+
+
+        /* ========================================
+           EXPERIMENT GRID
+        ======================================== */
+
+        .all-experiments-grid {
+
+            width: 100%;
+
+            max-width: 1050px;
+
+            margin: 75px auto 0;
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 22px;
+
+            align-items: start;
+        }
+
+
+        /* ========================================
+           EXPERIMENT CARD
+        ======================================== */
+
+        .all-experiment-card {
+
+            width: 100%;
+
+            overflow: hidden;
+
+            border-radius: 20px;
+
+            background:
+                rgba(18, 24, 39, 0.65);
+
+            border:
+                1px solid
+                rgba(255, 255, 255, 0.08);
+
+            position: relative;
+
+            transition:
+                transform 0.4s ease,
+                border-color 0.4s ease,
+                box-shadow 0.4s ease;
+        }
+
+        .all-experiment-card:hover {
+
+            transform: translateY(-6px);
+
+            border-color:
+                rgba(124, 58, 237, 0.4);
+
+            box-shadow:
+                0 20px 50px
+                rgba(0, 0, 0, 0.3);
+        }
+
+
+        /* ========================================
+           IMAGE
+        ======================================== */
+
+        .all-experiment-card img {
+
+            display: block;
+
+            width: 100%;
+
+            height: auto;
+
+            object-fit: contain;
+
+            transition:
+                transform 0.5s ease;
+        }
+
+        .all-experiment-card:hover img {
+
+            transform: scale(1.025);
+        }
+
+
+        /* ========================================
+           EXPERIMENT INFO
+        ======================================== */
+
+        .experiment-info {
+
+            padding: 20px 22px 22px;
+        }
+
+        .experiment-info span {
+
+            font-size: 10px;
+
+            font-weight: 700;
+
+            letter-spacing: 1.4px;
+
+            text-transform: uppercase;
+
+            color:
+                rgba(255, 255, 255, 0.4);
+        }
+
+        .experiment-info h2 {
+
+            margin: 8px 0 0;
+
+            font-family: "Manrope", sans-serif;
+
+            font-size: 20px;
+        }
+
+
+        /* ========================================
+           RESPONSIVE
+        ======================================== */
+
+        @media (max-width: 900px) {
+
+            .all-experiments-grid {
+
+                grid-template-columns:
+                    repeat(2, 1fr);
+
+                padding: 0 25px;
+            }
+
+            .back-home {
+
+                left: 25px;
+            }
+        }
+
+
+        @media (max-width: 600px) {
+
+            .experiments-page {
+
+                padding-top: 130px;
+            }
+
+            .experiments-header {
+
+                padding: 0 22px;
+            }
+
+            .experiments-header h1 {
+
+                letter-spacing: -1.5px;
+            }
+
+            .experiments-header p {
+
+                font-size: 15px;
+            }
+
+            .all-experiments-grid {
+
+                grid-template-columns: 1fr;
+
+                gap: 18px;
+
+                margin-top: 50px;
+
+                padding: 0 18px;
+            }
+
+            .back-home {
+
+                position: static;
+
+                margin-left: 20px;
+
+                margin-bottom: 35px;
+            }
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <main class="experiments-page">
+
+
+        <!-- BACK -->
+
+        <a href="index.html" class="back-home">
+
+            ← Back to home
+
+        </a>
+
+
+        <!-- HEADER -->
+
+        <div class="experiments-header">
+
+            <div class="section-label">
+
+                PLAYGROUND
+
+            </div>
+
+            <h1>
+
+                Experiments &
+                <span>explorations.</span>
+
+            </h1>
+
+            <p>
+
+                A collection of small ideas,
+                visual experiments and design
+                explorations.
+
+            </p>
+
+        </div>
+
+
+        <!-- ====================================
+             ALL EXPERIMENTS
+        ===================================== -->
+
+        <div class="all-experiments-grid">
+
+
+            <!-- EXPERIMENT 1 -->
+
+            <article class="all-experiment-card">
+
+                <img
+                    src="images/experiment-1.png"
+                    alt="UI/UX Experiment 1"
+                >
+
+                <div class="experiment-info">
+
+                    <span>Experiment 01</span>
+
+                    <h2>Visual Exploration</h2>
+
+                </div>
+
+            </article>
+
+
+            <!-- EXPERIMENT 2 -->
+
+            <article class="all-experiment-card">
+
+                <img
+                    src="images/experiment-2.png"
+                    alt="UI/UX Experiment 2"
+                >
+
+                <div class="experiment-info">
+
+                    <span>Experiment 02</span>
+
+                    <h2>Interface Study</h2>
+
+                </div>
+
+            </article>
+
+
+            <!-- EXPERIMENT 3 -->
+
+            <article class="all-experiment-card">
+
+                <img
+                    src="images/experiment-3.png"
+                    alt="UI/UX Experiment 3"
+                >
+
+                <div class="experiment-info">
+
+                    <span>Experiment 03</span>
+
+                    <h2>Design Exploration</h2>
+
+                </div>
+
+            </article>
+
+
+            <!-- EXPERIMENT 4 -->
+
+            <article class="all-experiment-card">
+
+                <img
+                    src="images/experiment-4.png"
+                    alt="UI/UX Experiment 3"
+                >
+
+                <div class="experiment-info">
+
+                    <span>Experiment 03</span>
+
+                    <h2>Design Exploration</h2>
+
+                </div>
+            </article>
+            
+            <!-- EXPERIMENT 5 -->
+
+            <article class="all-experiment-card">
+
+                <img
+                    src="images/experiment-5.png"
+                    alt="UI/UX Experiment 5"
+                >
+
+                <div class="experiment-info">
+
+                    <span>Experiment 05</span>
+
+                    <h2>Design Exploration</h2>
+
+                </div>
+            </article>
+
+
+            <article class="all-experiment-card">
+
+                <img
+                    src="images/experiment-6.png"
+                    alt="UI/UX Experiment 6"
+                >
+
+                <div class="experiment-info">
+
+                    <span>Experiment 06</span>
+
+                    <h2>Design Exploration</h2>
+
+                </div>
+            </article>    
+    
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>
