@@ -202,6 +202,133 @@ const projects = {
             "This project reinforced the importance of reducing unnecessary steps and keeping the shopping journey focused on the user's primary goal.",
 
         next: "campusos"
+    },
+
+
+
+
+    store: {
+
+        category: "WEBSITE · CASE STUDY",
+
+        title: "Store",
+
+        subtitle:
+            "A simple and seamless mobile shopping experience focused on discovery, personalization and effortless checkout.",
+
+        role: "UI/UX Designer",
+
+        type: "Web Application",
+
+        year: "2026",
+
+        tools: "Figma",
+
+        hero: "images/store.png",
+
+        screen1: "images/store.png",
+        screen2: "images/store-screen2.png",
+        screen3: "images/store-screen3.png",
+        screen4: "images/store-screen4.png",
+        screen5: "images/store-screen5.png",
+        screen6: "images/store-screen6.png",
+
+        overview:
+            "The Shopping App concept explores a clean mobile commerce experience where users can discover products, explore categories and complete purchases with minimal friction.",
+
+        problemTitle:
+            "Shopping experiences can become cluttered.",
+
+        problem:
+            "Too many products, filters and promotional elements can make product discovery difficult. The design focuses on keeping the experience clean and easy to navigate.",
+
+        goal:
+            "Create a simple shopping journey that balances product discovery, useful information and a smooth purchasing experience.",
+
+        research: [
+            {
+                number: "01",
+                title: "Easy discovery",
+                text: "Users should be able to browse products naturally without feeling overwhelmed."
+            },
+            {
+                number: "02",
+                title: "Product clarity",
+                text: "Product imagery, pricing and key information should have a strong visual hierarchy."
+            },
+            {
+                number: "03",
+                title: "Simple checkout",
+                text: "The final purchasing steps should feel predictable, focused and easy to complete."
+            }
+        ],
+
+        reflection:
+            "This project reinforced the importance of reducing unnecessary steps and keeping the shopping journey focused on the user's primary goal.",
+
+        next: "campusos"
+    },
+
+    land: {
+
+        category: "LANDING PAGE · CASE STUDY",
+
+        title: "Landing Page",
+
+        subtitle:
+            "A simple and seamless Landing page experience focused on discovery, personalization and effortless checkout.",
+
+        role: "UI/UX Designer",
+
+        type: "Web Application",
+
+        year: "2026",
+
+        tools: "Figma",
+
+        hero: "images/land.png",
+
+        screen1: "images/land.png",
+        screen2: "images/land-screen2.png",
+        screen3: "images/land-screen3.png",
+        screen4: "images/land-screen4.png",
+        screen5: "images/land-screen5.png",
+        screen6: "images/land-screen6.png",
+
+        overview:
+            "FrameAI is a premium, dark-themed AI-powered UI/UX design platform engineered to convert text prompts and concept descriptions into structured, high-fidelity wireframes, responsive components, and design systems in real time. ",
+
+        problemTitle:
+            "Friction and Fragmentation in Early-Stage UI/UX Workflows",
+
+        problem:
+            "Product design teams waste valuable hours manually building wireframes from scratch, mapping complex user flows, and assembling initial design system tokens before validating core product ideas. Existing generative AI tools produce static image renders instead of structured, editable UI layers, making them unsuitable for professional product design workflows. ",
+
+        goal:
+            "Build a clean, dark-mode SaaS page that makes complex AI design tools feel simple, structured, and premium.",
+
+        research: [
+            {
+                number: "01",
+                title: "Bridging Generative AI and Component-Driven Design",
+                text: "Designers don't want AI to replace creative control—they want it to eliminate repetitive wireframing and design system setup so they can focus on high-level UX strategy."
+            },
+            {
+                number: "02",
+                title: "Output Control Over Image Generation",
+                text: "Current AI design tools output flat images instead of editable vector frames, forcing designers to recreate layouts from scratch rather than iterate directly."
+            },
+            {
+                number: "03",
+                title: "Visual Hierarchy Builds Trust",
+                text: "SaaS buyers associate clean visual structure, restrained dark-mode lighting, and spacious layouts with product reliability and enterprise-grade quality."
+            }
+        ],
+
+        reflection:
+            "This project reinforced the importance of reducing unnecessary steps and keeping the shopping journey focused on the user's primary goal.",
+
+        next: "campusos"
     }
 
 };
